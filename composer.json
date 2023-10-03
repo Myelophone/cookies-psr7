@@ -1,0 +1,31 @@
+{
+	"name": "myelophone/cookies-psr7",
+	"description": "Helper classes for creating PSR-7 compatible cookie headers",
+	"keywords": [
+		"rest",
+		"restful",
+		"api",
+		"http",
+		"psr7",
+		"psr-7",
+		"cookie",
+		"cookies"
+	],
+	"version": "1.0",
+	"license": "MIT",
+	"type": "library",
+	"authors": [
+		{
+			"name": "Aleks Ivanov",
+			"email": "aleksivanov.me@gmail.com"
+		}
+	],
+	"autoload": {
+		"psr-4": {
+			"Myelophone\\Cookies\\": "src"
+		}
+	},
+	"require": {
+		"php": ">=7"
+	}
+}
