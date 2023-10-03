@@ -1,5 +1,5 @@
 {
-	"name": "myelophone/cookie-psr7",
+	"name": "myelophone/cookies-psr7",
 	"description": "Helper classes for creating PSR-7 compatible cookie headers",
 	"keywords": [
 		"rest",
