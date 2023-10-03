@@ -2,12 +2,18 @@
 
 This package provides `CookieFactory`, a PSR-7 compatible class that facilitates creating `Set-cookie` headers.
 
-To install, add `myelophone/cookies-psr7` to your project's `composer.json`.
+To install, with composer use:
+
+```composer
+composer require myelophone/cookies-psr7
+```
+
+or add `myelophone/cookies-psr7` to your project's `composer.json`:
 
 ```json
 {
 	"require": {
-		"myelophone/cookies-psr7": "~1.0"
+		"myelophone/cookies-psr7": "^1.0"
 	}
 }
 ```
@@ -31,8 +37,8 @@ Use these with the PSR-7 `ResponseInterface->withAddedHeader` or `ResponseInterf
 
 ```php
 $response = $response
-  ->withAddedHeader('Set-cookie', $cookieFactory->create('name', 'value'))
-  ->withAddedHeader('Set-cookie', $cookieFactory->create('another', 'something-else')));
+  ->withHeader('Set-cookie', $cookieFactory->create('name', 'value'))
+  ->withHeader('Set-cookie', $cookieFactory->create('another', 'something-else')));
 ```
 
 To configure a `CookieFactory` to provide `Domain`, `Path`, `Secure`, `HttpOnly` and/or `SameSite`, pass these to the contructor.
