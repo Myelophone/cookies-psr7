@@ -33,12 +33,10 @@ $cookie = $cookieFactory->create('name', 'value');
 // name=value
 ```
 
-Use these with the PSR-7 `ResponseInterface->withAddedHeader` or `ResponseInterface->withHeader` to add cookies to a response.
+Use these with the PSR-7 `ResponseInterface->withAddedHeader` (`ResponseInterface->withHeader` or etc) to add cookies to a response.
 
 ```php
-$response = $response
-  ->withHeader('Set-cookie', $cookieFactory->create('name', 'value'))
-  ->withHeader('Set-cookie', $cookieFactory->create('another', 'something-else')));
+$response = $response->withHeader('Set-cookie', $cookieFactory->create('name', 'value'));
 ```
 
 To configure a `CookieFactory` to provide `Domain`, `Path`, `Secure`, `HttpOnly` and/or `SameSite`, pass these to the contructor.
