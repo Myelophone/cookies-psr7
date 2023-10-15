@@ -1,4 +1,4 @@
-# Myelophone Cookies
+# Myelophone PSR-7 Cookies
 
 This package provides `CookieFactory`, a PSR-7 compatible class that facilitates creating `Set-cookie` headers.
 
