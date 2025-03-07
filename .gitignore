@@ -57,9 +57,6 @@ vendor/
 # PHP
 /vendor/
 
-# Composer
-composer.lock
-
 # SASS/SCSS
 .sass-cache/
 
@@ -475,7 +472,6 @@ $RECYCLE.BIN/
 *.lnk
 
 # General
-*.lock
 *.seed.lock
 
 # OS-specific caches

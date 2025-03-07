@@ -11,12 +11,12 @@
 		"cookie",
 		"cookies"
 	],
-	"version": "1.0",
+	"version": "1.0.1",
 	"license": "MIT",
 	"type": "library",
 	"authors": [
 		{
-			"name": "Aleks Ivanov",
+			"name": "Aliaksandr Ivanou",
 			"email": "aleksivanov.me@gmail.com"
 		}
 	],
